@@ -4,6 +4,9 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import './index.css';
 import Home from './pages/home';
+import CustomGrid from './pages/grid';
+import CustomBox from './pages/box';
+
 import reportWebVitals from './reportWebVitals';
 
 const history = createBrowserHistory();
@@ -14,8 +17,8 @@ ReactDOM.render(
       {/* Switch will render the first component that matches the route frist */}
       <Switch>
         <Route exact path="/" component={Home}/>
-        {/* <Route exact path="/signin" component={Signin}/>
-        <Route exact path="/signup" component={Signup}/>
+        <Route exact path="/grid" component={CustomGrid}/>
+        {/* <Route exact path="/signup" component={Signup}/>
         <Route path="/register" component={Register}/>
         <Route path="/account" component={Content}/>
         <Route component={PageNotFound}/> */}
