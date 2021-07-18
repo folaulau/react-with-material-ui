@@ -8,6 +8,7 @@ import Grid from '@material-ui/core/Grid';
 import FormLabel from '@material-ui/core/FormLabel';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import RadioGroup from '@material-ui/core/RadioGroup';
+import {Box, Button} from '@material-ui/core';
 import Radio from '@material-ui/core/Radio';
 import Paper from '@material-ui/core/Paper';
 /**
@@ -20,7 +21,7 @@ import Paper from '@material-ui/core/Paper';
     }
   }));
 
- export default function CustomDataDisplay(props) {
+ export default function CustomLayout(props) {
 
     const classes = useStyles();
 
@@ -28,6 +29,22 @@ import Paper from '@material-ui/core/Paper';
         <React.Fragment>
             <CssBaseline />
             <Header/>
+            <h1 style={{border:"2px solid black", textAlign:"center"}}>Box Layout</h1>
+            <div>Box has CSS features that help avoid writing too much CSS. It creates a div for you</div>
+            <a href="https://material-ui.com/components/box/" target="_blank">Reference</a>
+            <br/>
+            <Box color="blue" 
+                p={{ xs: 1, sm: 2, md: 5, lg: 5, xl: 5}} 
+                mt={{ xs: 2, sm: 3, md: 5, lg: 5, xl: 5}}
+                fontWeight="bold"
+                textAlign="center">
+                <div>Hello World</div>
+                <div>My name is John</div>
+                <div>I am 21 years old</div>
+            </Box>
+            <br/>
+            <br/>
+            <h1 style={{border:"2px solid black", textAlign:"center"}}>Grid Layout</h1>
             <a href="https://material-ui.com/components/grid/" target="_blank">Reference</a>
             <h3>Using Container</h3>
             <Container component="main" style={{border:"2px solid blue"}}>

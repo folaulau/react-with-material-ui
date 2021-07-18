@@ -20,7 +20,7 @@ import Paper from '@material-ui/core/Paper';
     }
   }));
 
- export default function CustomDataDisplay(props) {
+ export default function CustomSurfaces(props) {
 
     const classes = useStyles();
 
