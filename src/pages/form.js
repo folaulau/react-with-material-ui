@@ -107,7 +107,7 @@ import {
         <React.Fragment>
             <CssBaseline />
             <Header/>
-            <h1 style={{border:"2px solid black", textAlign:"center"}}>Button</h1>
+            <h1 style={{border:"2px solid black", textAlign:"center"}}>Form</h1>
             <a href="https://material-ui.com/components/buttons/" target="_blank">Reference</a>
             <h3 style={{textAlign:"center"}}>Buttons</h3>
             <Container>
